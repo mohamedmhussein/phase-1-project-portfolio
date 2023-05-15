@@ -99,3 +99,47 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
 }
+
+.tabs {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tabLink {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabLink::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #FFCC00;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.6s;
+}
+
+.tabLink.active::after{
+    width: 50%;
+}
+.tabContent ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tabContent ul li span {
+    color: #cba301;
+    font-size: 14px;
+}
+
+.tabContent {
+    display: none;
+}
+
+.tabContent.active {
+    display: block;
+}
