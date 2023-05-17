@@ -1,9 +1,8 @@
 
 
-// Clicking about subsection content (Skills, Experience, Education)
+// Clicking "about" subsection content (Skills, Experience, Education)
 const tabLink = document.querySelectorAll(".tabLink")
 tabLink.forEach(link => link.addEventListener("click",selectAboutSubSection))
-
 
 
 // ----------Functoins--------------
