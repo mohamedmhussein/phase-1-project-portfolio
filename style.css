@@ -98,7 +98,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
-.aboutMe {
+.subTitle {
     color: white;
     font-size: 60px;
     font-weight: 600;
@@ -188,4 +188,15 @@ i {
 .servicesList div:hover {
     background: var(--secColor);
     transform: translateY(-10px);
+}
+
+/* ---------------Portfolio------------------ */
+#portfolio {
+    padding: 50px 0;
+}
+
+.projectList {
+    font-size: 30px;
+    font-weight: 500px;
+    margin-bottom: 15px;
 }
