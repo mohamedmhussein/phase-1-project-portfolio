@@ -1,3 +1,7 @@
+/* Defining global CSS variables */
+:root{
+    --secColor: #f6c810;
+}
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +49,7 @@ nav ul li a::after {
     content: "";
     width: 0%;
     height: 3px;
-    background: #FFCC00;
+    background: var(--secColor);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -67,7 +71,7 @@ nav ul li a:hover::after{
 }
 
 .title h1 span {
-    color: #FFCC00;
+    color: var(--secColor);
 }
 
 /* ---------About---------- */
@@ -117,7 +121,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #FFCC00;
+    background: var(--secColor);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -132,7 +136,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tabContent ul li span {
-    color: #cba301;
+    color: var(--secColor);
     font-size: 14px;
 }
 
@@ -153,4 +157,35 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
     grid-gap: 40px;
     margin-top: 50px;
+}
+
+.servicesList div {
+    background: #2b2b2b;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.6s, transform 0.6s;
+}
+i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.servicesList div h2 {
+    font-size: 30px;
+    font-weight: 500px;
+    margin-bottom: 15px;
+}
+.servicesList div a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.servicesList div:hover {
+    background: var(--secColor);
+    transform: translateY(-10px);
 }

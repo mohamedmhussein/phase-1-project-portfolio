@@ -19,3 +19,4 @@ function selectAboutSubSection(event){
     //add active class to only the content that is tied to the clicked subsection
     document.querySelector(`#${event.target.textContent}`).classList.add("active")
 }
+
