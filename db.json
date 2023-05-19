@@ -1,19 +1,39 @@
 {
-    "movies": [
+    "services": [
       {
         "id": 1,
-        "title": "The Brave Little Toaster",
-        "summary": "A group of appliances set off on a journey"
+        "logo": "fa-solid fa-laptop-code",
+        "service": "Web Design",
+        "summary": "Design the front-end of webpages using the skills of HTML, CSS, and javascript. Currently, in phase 2 of my study.",
+        "learn": "Learn more"
       },
       {
         "id": 2,
-        "title": "The Princess Bride",
-        "summary": "A mix of swashbuckling, romance, and comedy"
+        "logo": "fa-solid fa-people-roof",
+        "service": "Leadership",
+        "summary": "Results-driven operations leadership skills with 2 years of experience in optimizing productivity and leading high-performing teams",
+        "learn": "Learn more"
       },
       {
         "id": 3,
-        "title": "Spirited Away",
-        "summary": "A young girl works to reunite with her parents while trapped in a supernatural realm"
-      }
+        "logo": "fa-brands fa-slack",
+        "service": "Graphic Design",
+        "summary": "I possess a rare talent in graphic design that consistently captivates audiences and elevates brands to new heights.",
+        "learn": "Learn more"
+      },
+      {
+        "id": 3,
+        "logo": "fa-brands fa-slack",
+        "service": "Graphic Design",
+        "summary": "I possess a rare talent in graphic design that consistently captivates audiences and elevates brands to new heights.",
+        "learn": "Learn more"
+      },
+      {
+        "id": 4,
+        "logo": "fa-brands fa-slack",
+        "service": "Graphic Design",
+        "summary": "I possess a rare talent in graphic design that consistently captivates audiences and elevates brands to new heights.",
+        "learn": "Learn more"
+      },
     ]
   }
