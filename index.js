@@ -61,4 +61,13 @@ function postFeedback(feedback){
         },
         body: JSON.stringify(feedback)
     })
+    //showing "Message sent successfully" for few seconds after submitting the form
+    .then(res => {
+        let sent = document.querySelector('#sent')
+        sent.textContent = "Message sent successully"
+        setTimeout(function(){
+            sent.textContent = ""
+        },3000)
+        document.querySelector('form').reset() //resetting the form
+    })
 }

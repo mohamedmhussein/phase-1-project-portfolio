@@ -370,3 +370,9 @@ form .button2 {
     margin-top: 20px;
     cursor: pointer;
 }
+
+#sent {
+    margin-top: -35px;
+    font-size: 15px;
+    color: cornsilk;
+}
