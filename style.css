@@ -23,6 +23,7 @@ html {
     background-image: url(images/myImage.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
