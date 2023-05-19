@@ -5,22 +5,7 @@ const tabLink = document.querySelectorAll(".tabLink")
 tabLink.forEach(link => link.addEventListener("click",selectAboutSubSection))
 
 // Fetching the services from the json server
-fetch("http://localhost:3000/services")
-.then(res => res.json())
-.then(services => services.forEach(service =>{
-    let serviceElement = document.createElement('div')
-    serviceElement.className = "service"
-    serviceElement.innerHTML = `
-        <i class="${service.logo}"></i>
-        <h2>${service.serviceName}</h2>
-        <p>${service.summary}</p>
-        <a href="#">${service.learn}</a>`
-    document.querySelector('.servicesList').append(serviceElement)
-
-} 
-    
-    ))
-
+getAllServices()
 
 // ----------Functoins--------------
 function selectAboutSubSection(event){
@@ -37,3 +22,19 @@ function selectAboutSubSection(event){
     document.querySelector(`#${event.target.textContent}`).classList.add("active")
 }
 
+function getAllServices(){
+    fetch("http://localhost:3000/services")
+    .then(res => res.json())
+    .then(services => services.forEach(service =>getOneService(service)))
+}
+
+function getOneService (service) {
+    let serviceElement = document.createElement('div')
+    serviceElement.className = "service"
+    serviceElement.innerHTML = `
+        <i class="${service.logo}"></i>
+        <h2>${service.serviceName}</h2>
+        <p>${service.summary}</p>
+        <a href="#">${service.learn}</a>`
+    document.querySelector('.servicesList').append(serviceElement)
+}
