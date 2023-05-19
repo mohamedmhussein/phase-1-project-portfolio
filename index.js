@@ -7,6 +7,9 @@ tabLink.forEach(link => link.addEventListener("click",selectAboutSubSection))
 // Fetching the services from the json server
 getAllServices()
 
+//Submit form into db.json file
+document.querySelector('form').addEventListener('submit',handleSubmit)
+
 // ----------Functoins--------------
 function selectAboutSubSection(event){
     //remove active class of all subsection
@@ -20,6 +23,7 @@ function selectAboutSubSection(event){
     
     //add active class to only the content that is tied to the clicked subsection
     document.querySelector(`#${event.target.textContent}`).classList.add("active")
+
 }
 
 function getAllServices(){
@@ -37,4 +41,24 @@ function getOneService (service) {
         <p>${service.summary}</p>
         <a href="#">${service.learn}</a>`
     document.querySelector('.servicesList').append(serviceElement)
+}
+
+function handleSubmit(event){
+    event.preventDefault()
+    let feedback = {
+        name: event.target.name.value,
+        email: event.target.email.value,
+        message: event.target.message.value
+    }
+    postFeedback(feedback)
+}
+
+function postFeedback(feedback){
+    fetch("http://localhost:3000/feedback",{
+        method: 'POST',
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify(feedback)
+    })
 }
