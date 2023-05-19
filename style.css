@@ -279,3 +279,47 @@ i {
 .button:hover {
     background: var(--secColor);
 }
+
+/* ----------contact----------- */
+.contactInfo {
+    flex-basis: 35%;
+}
+
+.form {
+    flex-basis: 60%;
+}
+.contactInfo p {
+    margin-top: 30px;
+}
+
+.contactInfo p i {
+    color: var(--secColor);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.socialMedia {
+    margin-top: 30px;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: rgb(226, 226, 226);
+    display: inline-block;
+    transition: transform 0.6s;
+}
+
+.socialMedia a i {
+    font-size: 30px;
+}
+
+.socialMedia a:hover {
+    color: var(--secColor);
+    transform: translateY(-5px);
+}
+
+.button.button2 {
+    display: inline-block;
+    background: var(--secColor);
+}
