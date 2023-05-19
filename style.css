@@ -29,6 +29,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .myLogo {
     width: 200px;   
@@ -322,4 +323,26 @@ i {
 .button.button2 {
     display: inline-block;
     background: var(--secColor);
+}
+
+form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #2b2b2b;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    border-radius: 6px;
+}
+
+form .button2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
 }
