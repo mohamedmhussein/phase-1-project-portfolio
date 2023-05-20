@@ -22,17 +22,17 @@
       "learn": "Learn more"
     },
     {
-      "id": 3,
+      "id": 4,
       "logo": "fa-brands fa-slack",
-      "serviceName": "Graphic Design",
-      "summary": "I possess a rare talent in graphic design that consistently captivates audiences and elevates brands to new heights.",
+      "serviceName": "Engineering",
+      "summary": "Innovative engineer adept at designing and implementing cutting-edge solutions to complex challenges, driving forward progress and creating a better future.",
       "learn": "Learn more"
     },
     {
-      "id": 4,
+      "id": 5,
       "logo": "fa-brands fa-slack",
-      "serviceName": "Graphic Design",
-      "summary": "I possess a rare talent in graphic design that consistently captivates audiences and elevates brands to new heights.",
+      "serviceName": "Researcher",
+      "summary": "Passionate researcher with a thirst for knowledge, driven to push the boundaries of discovery and make a lasting impact on scientific advancements.",
       "learn": "Learn more"
     }
   ],
