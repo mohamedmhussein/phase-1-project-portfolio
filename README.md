@@ -45,7 +45,8 @@ This repository contains the code and assets for my single-page portfolio websit
 1. Open the index.html file in a web browser.
 2. Customize the website content by editing the HTML and CSS files.
 3. Replace the images with your own project screenshots or photos.
-4. Update the contact information in the contact m section.
+4. Update the contact information in the contact me section.
+5. The webpage retrieves and posts data to the json server. Guide on installing and running the json server can be found [HERE](https://www.npmjs.com/package/json-server?activeTab=readme)
 
 ## **Contributing**
 
