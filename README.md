@@ -50,7 +50,7 @@ This repository contains the code and assets for my single-page portfolio websit
 
 ## **Contributing**
 
-I appreciate your interest in contributing to my portfolio website. If you have any suggestions, bug fixes, or improvements, please feel free to submit a pull request.
+I appreciate your interest in contributing to my portfolio website. If you have any suggestions, bug fixes, or improvements, please feel free to submit a pull request. Representative images in My Work sections are downloaded from freepik.com.
 
 ## **Contact**
 
