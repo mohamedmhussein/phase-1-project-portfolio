@@ -31,8 +31,8 @@ This repository contains the code and assets for my single-page portfolio websit
 
 ## **Technologies Used**
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ## **Installation**
